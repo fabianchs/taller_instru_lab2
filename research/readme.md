@@ -17,6 +17,8 @@ Debido a su pequeño tamaño y capacidad de respuesta rápida, estos sensores so
 
 #### Ventajas y Desventajas
 A continuacion, se mostrara una tabla que representa las ventajas y desventajas que existen entre los diferentes sensores de temperatura mencionados anteriormente.
+![VD_sensores](research/VD_sensores.png)
+La imagen fue recuperada de [7].
 
 
 
@@ -61,3 +63,5 @@ Para el caso de rechazo de croostalk este se mide con el análisis de pasar una 
 [5] OMEGA Engineering : Customer Service Center. (s. f.). https://mx.omega.com/prodinfo/termistor.htm
 
 [6] Pelgrom, M. (2022). Analog-to-Digital conversion. En Springer eBooks. https://doi.org/10.1007/978-3-030-90808-9
+
+[7] Guía de comparación de sensores de temperatura | Watlow. (s. f.). https://www.watlow.com/es-es/resources-and-support/engineering-tools/knowledge-base/temperature-sensors-comparison-guide.
