@@ -1,7 +1,7 @@
 ## 1. Cuestionario previo
 
 ### 1.1 ¿Cuales son los tipos de sensores de temperatura más populares? ¿Cuáles son sus ventajas y desventajas en función de los requisitos del diseño?
-# Termistor
+#### Termistor
 Un termistor es un dispositivo para medir temperatura que está hecho de un material semiconductor compacto. Este material tiene la característica de cambiar mucho su resistencia cuando la temperatura cambia un poco. Por lo general, los termistores tienen una propiedad interesante: cuando la temperatura sube, su resistencia disminuye, y esto se debe a que tienen un coeficiente de temperatura negativo.
 
  ### 1.2 ¿Cuales son los tipos de termocuplas? ¿Cuales son sus rangos de temperatura y tensión?
