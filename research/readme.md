@@ -86,7 +86,8 @@ Algunas ventajas del aislamiento entre señales es [2]:
 ### 1.5 Investigue diseños electrónicos para aislar eléctricamente señales DC o de baja frecuencia (<100Hz).
 
 ### 1.6 Investigue diseños de amplificadores con ganancia programable.
-El 
+El circuito de ganancia programable consta de un amplificador no inversor en el cual su ganancia se configura mediante un multiplexor que segun las entradas de seleccion, este cambia al valor de ganancia requerido, a continuacion se presenta un esquematico del circuito.
+
 
 ### 1.7 Investigue cómo se mide el rechazo de modo común para una señal diferencial y el rechazo de croostalk entre dos canales
 
