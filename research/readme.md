@@ -1,7 +1,9 @@
 ## 1. Cuestionario previo
 
-### 1.1 
+### 1.1 ¿Cuales son los tipos de sensores de temperatura más populares? ¿Cuáles son sus ventajas y desventajas en función de los requisitos del diseño?
 
+ ### 1.2 ¿Cuales son los tipos de termocuplas? ¿Cuales son sus rangos de temperatura y tensión?
+ ### 1.3 ¿Qué es una señal balanceada y una no balanceada? ¿Qué aplicación tiene el uso de señales balanceadas?
 
 ### 1.4 ¿ Qué es el aislamiento eléctrico entre dos tierrras? ¿En los diseños electrónicos qué vantajas tiene el aislamiento entre señales?
 
@@ -14,6 +16,9 @@ Algunas ventajas del aislamiento entre señales es [2]:
 - La potencia de la señal se mantiene idealmente íntegra dentro del sistema.
 - Los componentes no interactúan entre otros.
 
+### 1.5 Investigue diseños electrónicos para aislar eléctricamente señales DC o de baja frecuencia (<100Hz).
+
+### 1.6 Investigue diseños de amplificadores con ganancia programable.
 
 ### 1.7 Investigue cómo se mide el rechazo de modo común para una señal diferencial y el rechazo de croostalk entre dos canales
 
