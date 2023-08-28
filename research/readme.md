@@ -2,7 +2,25 @@
 
 ### 1.1 ¿Cuales son los tipos de sensores de temperatura más populares? ¿Cuáles son sus ventajas y desventajas en función de los requisitos del diseño?
 #### Termistor
-Un termistor es un dispositivo para medir temperatura que está hecho de un material semiconductor compacto. Este material tiene la característica de cambiar mucho su resistencia cuando la temperatura cambia un poco. Por lo general, los termistores tienen una propiedad interesante: cuando la temperatura sube, su resistencia disminuye, y esto se debe a que tienen un coeficiente de temperatura negativo.
+Un termistor es un dispositivo para medir temperatura que está hecho de un material semiconductor compacto. Este material tiene la característica de cambiar mucho su resistencia cuando la temperatura cambia un poco. Por lo general, los termistores tienen una propiedad interesante: cuando la temperatura sube, su resistencia disminuye, y esto se debe a que tienen un coeficiente de temperatura negativo [5].
+
+
+
+#### RTD (Resistencia de temperatura)
+Un RTD (Detector de Temperatura por Resistencia) es un sensor cuya resistencia cambia a medida que cambia su temperatura. La resistencia aumenta a medida que la temperatura del sensor aumenta. La relación entre resistencia y temperatura es bien conocida y se repite con el tiempo. Un RTD es un dispositivo pasivo. No produce una salida por sí mismo. Se utilizan dispositivos electrónicos externos para medir la resistencia del sensor al pasar una pequeña corriente eléctrica a través del sensor para generar un voltaje. Por lo general, se utiliza una corriente de medición de 1 mA o menos, con un máximo de 5 mA sin riesgo de auto-calentamiento[6].
+
+
+#### Termocupla o termopar
+Estos dispositivos de detección están compuestos por dos cables hechos de diferentes materiales que están conectados en un extremo. La parte donde se quiere medir la temperatura se expone allí. Además, los otros extremos de los cables están sin conectar para que se pueda medir la fuerza termo electromotriz que se genera en el sensor.
+
+Debido a su pequeño tamaño y capacidad de respuesta rápida, estos sensores son muy útiles para medir la temperatura en entornos desafiantes[6].
+
+#### Ventajas y Desventajas
+A continuacion, se mostrara una tabla que representa las ventajas y desventajas que existen entre los diferentes sensores de temperatura mencionados anteriormente.
+
+
+
+
 
  ### 1.2 ¿Cuales son los tipos de termocuplas? ¿Cuales son sus rangos de temperatura y tensión?
  ### 1.3 ¿Qué es una señal balanceada y una no balanceada? ¿Qué aplicación tiene el uso de señales balanceadas?
@@ -39,3 +57,7 @@ Para el caso de rechazo de croostalk este se mide con el análisis de pasar una 
 [3] Gerard, G. "Qué es la CMRR o relación de rechazo de modo común?. Youtube, 2023. [En línea]. Disponible en https://www.youtube.com/watch?v=-uj1TNaxxco&ab_channel=GuillermoGerard%3AVide%C3%ADtosparamifuturoyo , Acceso: 27 de agosto de 2023.
 
 [4] En clave de retro. "Aprende Electrónica: Crosstalk (diafonía)," YouTube, 2023. [En línea]. Disponible en: https://www.youtube.com/watch?v=Cv5zNkC4-ao&ab_channel=EnClavedeRetro . Acceso en: 27 de agosto de 2023.
+
+[5] OMEGA Engineering : Customer Service Center. (s. f.). https://mx.omega.com/prodinfo/termistor.htm
+
+[6] Pelgrom, M. (2022). Analog-to-Digital conversion. En Springer eBooks. https://doi.org/10.1007/978-3-030-90808-9
