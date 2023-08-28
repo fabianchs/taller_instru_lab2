@@ -86,9 +86,27 @@ Algunas ventajas del aislamiento entre señales es [2]:
 ### 1.5 Investigue diseños electrónicos para aislar eléctricamente señales DC o de baja frecuencia (<100Hz).
 
 ### 1.6 Investigue diseños de amplificadores con ganancia programable.
-El circuito de ganancia programable consta de un amplificador no inversor en el cual su ganancia se configura mediante un multiplexor que segun las entradas de seleccion, este cambia al valor de ganancia requerido, a continuacion se presenta un esquematico del circuito.
+Un circuito de ganancia programable permite al usuario amplificar el valor de un dato de entrada con la facilidad de establecer la ganancia deseada manualmente o mediante un microcontrolador, diseños de amplificadores con ganancia programable se muestran a continuacion [9].
 
-![Ganancia_programable](Ganancia_programable.jpg)
+![GP1](GP1.png)
+
+Utilizando el AD8421 con un multiplexor (mux) para lograr ganancia conmutada. En este arreglo, la resistencia de activación del mux se encuentra efectivamente conectada en línea con la resistencia de ganancia. 
+
+![GP2](GP2.png)
+
+Implementando un Amplificador de Ganancia Instrumental Programable (PGIA) de manera discreta mediante una disposición equilibrada. En esta situación, se aconseja la utilización de un interruptor cuádruple de un solo polo y un solo tiro (SPST) como el ADG5412F. Además de brindar la capacidad de emplear resistencias equilibradas, el interruptor también asegura que las capacidades estén equilibradas tanto para el drenaje como para la fuente, minimizando así la disminución en la relación de rechazo del modo común (CMRR).
+
+![GP3](GP3.png)
+
+Creando un Amplificador de Ganancia Instrumental Programable (PGIA) de forma discreta mediante el uso de amplificadores de entrada con una configuración de retroalimentación de corriente indirecta. En estos amplificadores, la magnitud de la amplificación se configura a través de la proporción de las resistencias externas, similar al proceso en un amplificador no inversor. Esto otorga al usuario mayor flexibilidad, ya que las resistencias empleadas para ajustar la ganancia pueden ser seleccionadas según las necesidades específicas del diseño.
+
+![GP4](GP4.png)
+
+Diseño discreto de Amplificador de Ganancia Instrumental (PGIA). La selección de los amplificadores de entrada está intrínsecamente vinculada a los requisitos de Adquisición de Datos (DAQ). Por ejemplo, si el diseño busca conservar la energía, serán adecuados los amplificadores de baja corriente de reposo. Por otro lado, en sistemas que anticipan la conexión de sensores de alta impedancia en la entrada, se pueden emplear amplificadores con corrientes de polarización muy bajas para reducir al mínimo el margen de error.
+
+![GP5](GP5.png)
+
+Creación de un PGIA con enfoque en la eficiencia energética. En la etapa secundaria del amplificador diferencial, se empleó el LTC2063 junto con la configuración de resistencias combinadas cuádruples LT5400, específicamente con resistencias de 1 MΩ. Esto garantiza que la corriente extraída sea mínima y que la Relación de Rechazo del Modo Común (CMRR) se mantenga, gracias a la precisión en la combinación de las resistencias.
 
 
 
@@ -118,3 +136,5 @@ Para el caso de rechazo de croostalk este se mide con el análisis de pasar una 
 [7] Guía de comparación de sensores de temperatura | Watlow. (s. f.). https://www.watlow.com/es-es/resources-and-support/engineering-tools/knowledge-base/temperature-sensors-comparison-guide.
 
 [8] Mind Design - https://www.mind.art.br. (s. f.). Termocupla, cómo funciona, tipos, consejos y modelos. | Alutal. Copyright © - https://www.alutal.com.br. https://www.alutal.com.br/es/termopar
+
+[9] Amplificadores de instrumentación de ganancia programable: encontrar uno que funcione para usted-Electron-FMUSER proveedor integral de transmisión de FM / TV. (s. f.). https://es.fmuser.net/content/?17416.html
