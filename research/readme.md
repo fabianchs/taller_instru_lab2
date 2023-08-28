@@ -1,0 +1,34 @@
+## 1. Cuestionario previo
+
+### 1.1 
+
+
+### 1.4 ¿ Qué es el aislamiento eléctrico entre dos tierrras? ¿En los diseños electrónicos qué vantajas tiene el aislamiento entre señales?
+
+Para el caso de tierras no aisladas en un solo sistema, agregarlas de esta manera al sistema puede resultar en lazos a tierra, los cuales son fuentes de ruido comunes en aplicaciones de medidas. Estos lazos a tierra ocurren cuando dos terminales conectadas en un circuito están en potenciales a tierra distintos, esto provoca que la corriente fluya entre dos puntos. La tierra de la fuente de señal puede ser de varios volts por encima o debajo de la tierra del instrumento. Cuando esto ocurre, el voltaje adicional puede ser causante de error en la medida y la corriente que fluye puede inducir voltajes en cables cercanos, lo cual ocasiona errores de medida. El aislamiento eléctrico entre dos tierras permite que no haya interacción entre los componentes que comparten un mismo sistema pero no interactúan de manera directa [1].
+
+Algunas ventajas del aislamiento entre señales es [2]:
+
+- Reducción de interferencias internas y externas.
+- El sistema es sensible únicamente a las entradas deseadas.
+- La potencia de la señal se mantiene idealmente íntegra dentro del sistema.
+- Los componentes no interactúan entre otros.
+
+
+### 1.7 Investigue cómo se mide el rechazo de modo común para una señal diferencial y el rechazo de croostalk entre dos canales
+
+Para el caso de medición para el rechazo de modo común se debe dividir la ganancia en modo diferencial contra la ganancia en modo común [3].
+
+$$ CMRR= \dfrac{Av_{dif}}{Av_{cmr}} $$
+
+Para el caso de rechazo de croostalk este se mide con el análisis de pasar una señal por el canal 1 de un osciloscopio y medir su influencia en $dB$ sobre el segundo canal que no está siendo alimentado por otra señal externa. Mediante el osciloscopio se observan los $dB$ que tiene el canal sin entrada y se obtiene el porcentaje de rechazo de crosstalk que presenta el circuito [4].
+
+## 2 Bibliografía
+
+[1] National Instruments. "Consideraciones de Conexión a Tierra para Medidas Mejoradas". Disponible en: https://www.ni.com/es/shop/data-acquisition/measurement-fundamentals-main-page/analog-fundamentals/grounding-considerations-for-improved-measurements.html. Acceso: 27 de agosto de 2023.
+
+[2] Ramón Pallas Areny. Diseño con amplificadores operacionales y circuitos integrados analógicos. Tercera Edición, McGraw Hill. México, 2005.
+
+[3] Gerard, G. "Qué es la CMRR o relación de rechazo de modo común?. Youtube, 2023. [En línea]. Disponible en https://www.youtube.com/watch?v=-uj1TNaxxco&ab_channel=GuillermoGerard%3AVide%C3%ADtosparamifuturoyo , Acceso: 27 de agosto de 2023.
+
+[4] En clave de retro. "Aprende Electrónica: Crosstalk (diafonía)," YouTube, 2023. [En línea]. Disponible en: https://www.youtube.com/watch?v=Cv5zNkC4-ao&ab_channel=EnClavedeRetro . Acceso en: 27 de agosto de 2023.
