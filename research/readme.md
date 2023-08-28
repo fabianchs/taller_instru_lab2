@@ -71,6 +71,30 @@ El rango de funcionamiento de estos sensores de temperatura se extiende desde 0�
 
 
  ### 1.3 ¿Qué es una señal balanceada y una no balanceada? ¿Qué aplicación tiene el uso de señales balanceadas?
+ 
+Una señal balanceada y una señal no balanceada son conceptos que se refieren a la forma en que se transmiten las señales eléctricas a lo largo de un cable o un sistema de comunicación. Estos términos son comunes en el ámbito de la electrónica y las comunicaciones.
+
+Señal No Balanceada:
+Es aquella en la que la información se transmite a través de un solo conductor en relación a un conductor de referencia, que generalmente es el conductor de tierra (o común). La señal se diferencia del conductor de referencia en términos de voltaje eléctrico, y esto hace que esté más susceptible a interferencias electromagnéticas y ruido.[10]
+
+Señal Balanceada:
+Una señal balanceada es aquella en la que la información se transmite a través de dos conductores idénticos, pero opuestos en polaridad, en relación a un conductor de referencia común, que suele ser el conductor de tierra. En este tipo de señal, la diferencia de voltaje entre los dos conductores es lo que transporta la información. Debido a que ambas líneas transportan la misma información pero con polaridades opuestas, cualquier interferencia que afecte a ambas líneas de manera igual (interferencia común) se cancelará automáticamente en el receptor. Esto hace que las señales balanceadas sean más resistentes al ruido y la interferencia.[10]
+
+Aplicación del Uso de Señales Balanceadas:
+
+Las señales balanceadas se utilizan en muchas aplicaciones donde la integridad de la señal es crítica y donde es necesario minimizar la interferencia y el ruido. Algunos ejemplos de aplicaciones incluyen:
+
+Audio Profesional: En equipos de audio profesional, como micrófonos, cables de línea y sistemas de sonido en vivo, se utilizan señales balanceadas para reducir el ruido y la interferencia, lo que mejora la calidad del sonido.
+
+Comunicación en Larga Distancia: En sistemas de comunicación de larga distancia, como transmisiones de audio o video, las señales balanceadas ayudan a mantener la calidad de la señal a lo largo de cables largos y en entornos con interferencia electromagnética.
+
+Redes de Datos: En aplicaciones de redes y telecomunicaciones, como Ethernet, se utilizan pares trenzados balanceados para transmitir datos, lo que ayuda a minimizar la interferencia y mejora la velocidad y confiabilidad de la transmisión.
+
+Instrumentación y Mediciones: En aplicaciones donde se requiere precisión en las mediciones, como en instrumentación científica y médica, se utilizan señales balanceadas para reducir la posibilidad de errores causados por interferencia.
+
+Video Profesional: En la transmisión y distribución de señales de video de alta calidad, como en la industria del cine y la televisión, las señales balanceadas ayudan a mantener la integridad de la señal a medida que viaja por distancias largas.
+
+En resumen, las señales balanceadas son ampliamente utilizadas en situaciones donde la calidad de la señal y la reducción del ruido son esenciales para un funcionamiento confiable y preciso del sistema.
 
 ### 1.4 ¿ Qué es el aislamiento eléctrico entre dos tierrras? ¿En los diseños electrónicos qué vantajas tiene el aislamiento entre señales?
 
@@ -84,6 +108,19 @@ Algunas ventajas del aislamiento entre señales es [2]:
 - Los componentes no interactúan entre otros.
 
 ### 1.5 Investigue diseños electrónicos para aislar eléctricamente señales DC o de baja frecuencia (<100Hz).
+Algunos diseños electrónicos que se utilizan para aislar eléctricamente señales de baja frecuencia:
+
+Transformadores de aislamiento: Los transformadores son dispositivos eficaces para aislar señales de baja frecuencia. Pueden proporcionar un aislamiento galvánico entre las partes primaria y secundaria. En aplicaciones de baja frecuencia, como señales DC o señales de hasta 100 Hz, los transformadores pueden ser adecuados. Sin embargo, los transformadores pueden tener limitaciones en términos de ancho de banda y tamaño.[11]
+
+Optoacopladores (optoaisladores): Los optoacopladores son dispositivos que utilizan acoplamiento óptico para aislar eléctricamente señales. Consisten en un LED emisor y un fotodetector en un mismo paquete. Cuando se aplica un voltaje a la entrada del LED, emite luz que activa el fotodetector, generando una señal en la salida. Los optoacopladores son útiles para aplicaciones de baja frecuencia y ofrecen un buen aislamiento galvánico.[11]
+
+Amplificadores de instrumentación aislados: Los amplificadores de instrumentación aislados son circuitos que amplifican y aislan señales de baja frecuencia al mismo tiempo. Estos dispositivos suelen incluir aislamiento galvánico mediante transformadores o técnicas optoacopladoras. Son muy utilizados en aplicaciones de medición de precisión donde se requiere un alto nivel de aislamiento.[11]
+
+Circuito de amplificación diferencial con filtro paso bajo: Este diseño implica la utilización de un circuito de amplificación diferencial seguido de un filtro paso bajo para atenuar cualquier ruido de alta frecuencia. El diseño diferencial ayuda a rechazar el ruido común y la interferencia. El filtro paso bajo se ajusta para limitar la banda de frecuencia de interés.[11]
+
+Conversores analógico-digitales aislados (ADC aislados): En aplicaciones donde se necesita convertir una señal analógica de baja frecuencia en una señal digital, los ADC aislados pueden ser útiles. Estos dispositivos convierten la señal analógica a digital mientras mantienen el aislamiento eléctrico entre la entrada y la salida.[11]
+
+Dispositivos basados en tecnología capacitiva: Los aisladores capacitivos pueden utilizarse para transmitir señales de baja frecuencia a través de un aislamiento dieléctrico. Estos dispositivos se basan en la variación de la capacitancia y se utilizan a menudo en aplicaciones industriales.[11]
 
 ### 1.6 Investigue diseños de amplificadores con ganancia programable.
 Un circuito de ganancia programable permite al usuario amplificar el valor de un dato de entrada con la facilidad de establecer la ganancia deseada manualmente o mediante un microcontrolador, diseños de amplificadores con ganancia programable se muestran a continuacion [9].
@@ -107,9 +144,6 @@ Diseño discreto de Amplificador de Ganancia Instrumental (PGIA). La selección 
 ![GP5](GP5.png)
 
 Creación de un PGIA con enfoque en la eficiencia energética. En la etapa secundaria del amplificador diferencial, se empleó el LTC2063 junto con la configuración de resistencias combinadas cuádruples LT5400, específicamente con resistencias de 1 MΩ. Esto garantiza que la corriente extraída sea mínima y que la Relación de Rechazo del Modo Común (CMRR) se mantenga, gracias a la precisión en la combinación de las resistencias.
-
-
-
 
 ### 1.7 Investigue cómo se mide el rechazo de modo común para una señal diferencial y el rechazo de croostalk entre dos canales
 
@@ -138,3 +172,7 @@ Para el caso de rechazo de croostalk este se mide con el análisis de pasar una 
 [8] Mind Design - https://www.mind.art.br. (s. f.). Termocupla, cómo funciona, tipos, consejos y modelos. | Alutal. Copyright © - https://www.alutal.com.br. https://www.alutal.com.br/es/termopar
 
 [9] Amplificadores de instrumentación de ganancia programable: encontrar uno que funcione para usted-Electron-FMUSER proveedor integral de transmisión de FM / TV. (s. f.). https://es.fmuser.net/content/?17416.html
+
+[10] Godoy, D. (2023) MB101: Conexiones balanceadas y no balanceadas - guía total, Musical Boutique. Disponible en: https://musicalboutique.co/blogs/blog-mb/mb101-conexiones-balanceadas-y-no-balanceadas-guia-total (Accesado: 28 Agosto 2023). 
+
+[11] Baker, B. (2018) Cómo aislar altos voltajes en Sistemas Robóticos Industriales de Alimentación única, DigiKey. Disponible en: https://www.digikey.com/es/articles/how-to-isolate-high-voltages-industrial-robotic-systems (Accesado: 28 Agosto 2023). 
