@@ -17,7 +17,8 @@ Debido a su pequeño tamaño y capacidad de respuesta rápida, estos sensores so
 
 #### Ventajas y Desventajas
 A continuacion, se mostrara una tabla que representa las ventajas y desventajas que existen entre los diferentes sensores de temperatura mencionados anteriormente.
-![VD_sensores](VD_sensores.png)
+![VD_sensores](VD_sensores.png).
+
 La imagen fue recuperada de [7].
 
 
