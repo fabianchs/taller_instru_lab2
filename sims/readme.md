@@ -1,4 +1,4 @@
-## Simulaciones
+## Simulaciones (Proteus)
 ### Etapa 1
 En la primera etapa se toma el valor de voltaje de la termocupla, se pasa por un amplificador de instrumentacion y luego se aisla electricamente con un optoacoplador, se busca una ganancia de 1000, por lo tanto, la salida se tiene en el orden de V y no de mV. El esquematico de la primera etapa se muestra a continuacion.
 
