@@ -6,7 +6,7 @@ A continuación se muestra el circuito con el montaje final y las conexiones de 
 
 ![conex_gen](conex_gen.jpeg)
 
-Las ganancias del PGA se muestran a continuación:
+Las ganancias del PGA se diseñaron para estar entre un rango de 4V y 9V teóricamente, se muestran a continuación las mediciones a nivel experimental:
 ![conex_gen](4.386.jpeg)
 ![conex_gen](5.217.jpeg)
 ![conex_gen](6.09.jpeg)
