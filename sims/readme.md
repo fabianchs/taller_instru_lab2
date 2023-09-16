@@ -14,15 +14,21 @@ Luego en la segunda etapa mediante un multiplexor y un amplificador en configura
 
 ### Etapa 3
 
-Finalmente, en la tercera etapa, se hace uso de un arduino uno y un lcd para poder apreciar la temperatura leida desde la primera entrada en forma de voltaje. A continuacion, se muestran los resultados.
+En la etapa 4 se usa un optoacoplador para aislar las tierras del circuito, de esta forma se puede conectar la alimentacion y la tierra que proporciona el arduino para tener una lectura mas estable.
 
-![E3](Etapa3.png)
+![E3](EtapaOpto.png)
 
 La grafica de voltaje por grado centigrado a la salida de la etapa 1 y 2 usada como referencia para poder pasar de digital a analogico nuevamente dentro de la programacion del arduino es la siguiente.
 
 ![VXC](VXC.png)
 
-Finalmente la programacion del arduino es el siguiente codigo 
+### Etapa 4
+En la ultima etapa se conecta el arduino junto con el display lcd como se muestra en la siguiente imagen:
+
+![arldc](Arlcd.png)
+
+### Programacion Arduino
+Finalmente, la programacion del arduino es la siguiente.
 
 ```arduino
 //Definiciones
