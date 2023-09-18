@@ -29,47 +29,40 @@ En la ultima etapa se conecta el arduino junto con el display lcd como se muestr
 
 ### Programacion Arduino
 Finalmente, la programacion del arduino es la siguiente.
-<div style="background-color: rgb(50, 50, 50);">
+
 ```arduino
-//Definiciones
-const int t1 = A0; // Temperatura de la termocupla 1
-const int t2 = A1; // Temperatura de la termocupla 2
-float temp1;       // Variable que armazenará la temperatura medida 1
-float temp2;       // Variable que armazenará la temperatura medida 2
-int value1;         //Variable entera para almacenar la conversión ADC 1
-int value2;         //Variable entera para almacenar la conversión ADC 2
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h>
 
-//Bibliotecas
-#include <LiquidCrystal.h> 
-LiquidCrystal lcd(10, 8, 5, 4, 3, 2); //(RS, E, D4,D5, D6, D7)
- 
- 
+LiquidCrystal_I2C lcd(0x27, 16, 2);  // Establece la dirección I2C del adaptador y el tamaño del LCD (16x2).
+
 void setup() {
- lcd.begin(16, 2);   // Inicia el LCD 16x02 (columnas,filas)
- lcd.home();         // Coloca el cursor en las coordenadas (0,0)
- lcd.print("T1:");   // Escribe en el LCD 
- lcd.setCursor(0,1); // Coloca el cursor en las coordenadas (0,1)
- lcd.print("T2:");   // Escribe en el LCD 
-} 
- 
-//Función que será ejecutada continuamente
-void loop() {
-  //Lectura del Pin A0 (ADC)
-  //value=analogRead(LM35); // Almacena el valor entero.
-  //Conveierte el valor entero en Temperatura
-  //temperatura=(value*5.0/1023.0) / 0.01;
-  
-  temp1 = ((float(analogRead(t1))*(8.8/1023))/0.0761290322);     //temperatura 1
-  temp2 = ((float(analogRead(t2))*(8.8/1023))/0.0761290322);     //temperatura 2
-  
-  
-  lcd.home();         // Coloca el cursor en las coordenadas (7,1)
-  lcd.print("T1:");   // Escribe en el LCD 
-  lcd.print(temp1);
+  lcd.init();                      // Inicializa el LCD.
+  lcd.backlight();                 // Activa la retroiluminación del LCD.
+}
 
-  lcd.setCursor(0,1); // Coloca el cursor en las coordenadas (0,1)
-  lcd.print("T2:");   // Escribe en el LCD 
-  lcd.print(temp2);
+void loop() {
+
+    int valorAnalogicoA0 = analogRead(A0);
+
+  // Leer el valor de tensión en el pin analógico A1
+  int valorAnalogicoA1 = analogRead(A1);
+
+  // Convertir los valores leídos a voltajes (0-1023 a 0-5V en este caso)
+  float voltajeA0 = (valorAnalogicoA0)*0.37;
+  float voltajeA1 = (valorAnalogicoA1)*0.37;
+
+  lcd.setCursor(0,0);
+  lcd.print("Temp 1: ");
+  lcd.print(voltajeA1,2);
+  lcd.print(" C");
+  lcd.setCursor(0,1);
+  lcd.print("Temp 2: ");
+  lcd.print(voltajeA0,2);
+  lcd.print(" C");
+
+
   delay(1000);
 }
-</div>
+
+```
