@@ -29,7 +29,7 @@ En la ultima etapa se conecta el arduino junto con el display lcd como se muestr
 
 ### Programacion Arduino
 Finalmente, la programacion del arduino es la siguiente.
-
+<div style="background-color: rgb(50, 50, 50);">
 ```arduino
 //Definiciones
 const int t1 = A0; // Temperatura de la termocupla 1
@@ -72,3 +72,4 @@ void loop() {
   lcd.print(temp2);
   delay(1000);
 }
+</div>
